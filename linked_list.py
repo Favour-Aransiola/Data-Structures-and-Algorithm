@@ -58,6 +58,13 @@ class LinkedList:
                 return None
                 
             
+    def nodeAtIndex(self, index):
+        position = index
+        current = self.head
+        while position>0:
+            current = current.next_node
+            position-=1
+        return current
             
             
             
@@ -72,3 +79,9 @@ class LinkedList:
 
 
             
+
+l1 = LinkedList()
+l1.add(20)
+l1.add(30)
+l1.add(40)
+print(l1.nodeAtIndex(0))

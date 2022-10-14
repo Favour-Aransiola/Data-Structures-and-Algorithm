@@ -38,5 +38,3 @@ def merge(left, right):
 
             
     
-merged = merge_sort([10,29,32,1,232,212,2,12,2])
-print(merged)

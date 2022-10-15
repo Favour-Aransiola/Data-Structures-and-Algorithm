@@ -36,3 +36,13 @@ def GCD(numberA, numberB):
     numberA,numberB= numberB,numberA%numberB
     return GCD(numberA,numberB )
 
+
+'''
+Convert a number from decimal to binary using recursion
+'''
+
+def decBinary(number):
+    print(number)
+    if(number==0):
+        return 0
+    return (number%2) + 10*(decBinary(number//2))
